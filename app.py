@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import os
+
+
 from Functions.flightplan_process import *
 from Functions.preflight_process import *
 from Functions.transit_process import *
@@ -8,6 +11,7 @@ from Functions.nighstop import *
 from Functions.charts import *
 from Functions.or_tool_mpwr import *
 
+os.environ['STREAMLIT_DEBUG'] = 'true'
 # Config pages
 st.set_page_config(
     page_title="MPWR APPs",
